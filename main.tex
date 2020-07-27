@@ -1,0 +1,282 @@
+%------- Configuration of page -------%
+\documentclass[
+	a4paper,
+	% showframes,
+	% vline=2.2em,
+	%maincolor=cvgreen,
+	sidecolor=gray!50,
+	sectioncolor=materialblue,
+	subsectioncolor=materialindigo,
+	% itemtextcolor=black!80,
+	% sidebarwidth=0.4\paperwidth,
+	% topbottommargin=0.03\paperheight,
+	% leftrightmargin=20pt,
+	profilepicsize=3.5cm,
+	% profilepicborderwidth=3.5pt,
+	profilepicstyle=profilecircle,
+	profilepiczoom=1.0,
+	% profilepicxshift=0mm,
+	% profilepicyshift=0mm,
+	% profilepicrounding=1.0cm,
+	% logowidth=4.5cm,
+	% logospace=5mm,
+	% logoposition=before,
+]{config/sixtysecondscv}
+
+\usepackage{config/main}
+
+%-------------------------------------------------------------------------------
+%                            PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+%% mandatory information
+% your name
+\cvname{Ignacio Martinez \\ Ávila}
+\cvjobtitle{Full Stack Developer}
+
+
+%% optional information
+% profile picture
+\cvprofilepic{assets/profile_picture.jpeg}
+% logo picture
+% \cvlogopic{assets/Mexico.png}
+
+% NOTE: ordering in sidebar will mimic the following order
+\cvphone{(+52) 552 942 4988}
+\cvcustomdata{\faEnvelope}{gsikmo@gmail.com}
+\cvcustomdata{\faHome}{Mendelssohn 151, La Raza, Gustavo A. Madero, CDMX, Mexico.}
+\cvbirthday{Born on April 12, 1997}
+\cvcustomdata{\faFlag}{Mexican}
+% \cvskype{myskypeID}
+% \cvsite{https://laguer.github.io/sixtysecondscv/}
+
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 1st PAGE
+%-------------------------------------------------------------------------------
+% add more profile sections to sidebar on first page
+\addtofrontsidebar{
+	\profilesection{Main Objective}
+		Create innovative solutions, while learning the best of software development and having fun at the same time.
+
+	% social network accounts incl. proper hyperlinks
+	\profilesection{Social Network}
+		\begin{icontable}{2.5em}{1em}
+		    \social{\faGithub}
+				{https://github.com/SrChach}
+				{github.com/SrChach}
+			\social{\faLinkedin}
+				{https://www.linkedin.com/in/srchach}
+				{linkedin.com/in/srchach}
+% 			\social{\aiResearchGate}
+% 				{https://www.researchgate.net/profile/}
+% 				{Researchgate Link}
+		\end{icontable}
+
+	\profilesection{Languages}
+        \pointskill{\flag{assets/Mexico.png}}{Spanish}{5}
+        \pointskill{\flag{assets/United-States.png}}{English}{4}
+        % \pointskill{\flag{Germany.png}}{German}{3}
+	
+	\profilesection{Barskills}
+	\barskill{\faSkyatlas}{Wearing asian rice hats}{60}
+	\barskill{\faImage}{Playing Chess}{30}
+	\barskill{\faMusic}{Playing the bamboo stick}{50}
+}
+    
+
+%-------------------------------------------------------------------------------
+%                              SIDEBAR 2nd PAGE
+%-------------------------------------------------------------------------------
+\addtobacksidebar{
+	\profilesection{About Me}
+	\aboutme{
+		The giant panda is a terrestrial animal and primarily spends its life
+		roaming and feeding in the bamboo forests of the Qinling Mountains and in
+		the hilly province of Sichuan.
+	}
+
+	\profilesection{Diagrams}
+	\begin{sidebarminipage}
+		\chartlabel{Bubble}
+		\chartlabel{Diagrams}
+		\chartlabel{with}
+		\chartlabel{proper}
+		\chartlabel{overflow}
+		\chartlabel{protection}
+		\chartlabel{for}
+		\chartlabel{labels}
+	\end{sidebarminipage}
+
+	\begin{figure}\centering
+		\smartdiagram[bubble diagram]{
+			\textcolor{white}{\textbf{Being a}} \\
+			\textcolor{white}{\textbf{Panda}}, % center bubble
+			\textcolor{black!90}{Eating},
+			\textcolor{black!90}{Sleeping},
+			\textcolor{black!90}{Rolling},
+			\textcolor{black!90}{Playing},
+			\textcolor{black!90}{Chilling}
+		}
+	\end{figure}
+
+	\chartlabel{Wheel Chart}
+
+	\wheelchart{3.7em}{2em}{%
+	20/3em/maincolor!50/Chill,
+	15/3em/maincolor!15/Play,
+	30/4em/maincolor!40/Sleep,
+	20/3em/maincolor!20/Eat
+	}
+	
+	\profilesection{Hard Skills}
+		\skill{\faBalanceScale}{Sleeping almost all day}
+		\skill{\faSitemap}{Eating a lot of bamboo sprouts}
+		\skill{\faGraduationCap}{Relaxing rest of the day}
+
+	\profilesection{Soft Skills}
+		\pointskill{\faHome}{Looking Cute}{4}[4]
+			\skill[1.8em]{\faCompress}{No need to specify further}
+		\pointskill{\faChild}{Chillin' hard}{3}[4]
+			\skill[1.8em]{\faCompress}{On a tree}
+			\skill[1.8em]{\faCompress}{In the grass}
+			
+	\profilesection{Barskills}
+	\barskill{\faSkyatlas}{Wearing asian rice hats}{60}
+	\barskill{\faImage}{Playing Chess}{30}
+	\barskill{\faMusic}{Playing the bamboo stick}{50}
+
+	\profilesection{Memberships}
+	\begin{memberships}
+		%\membership[4em]{pics/logo.png}{some.site}
+		%\membership[4em]{pics/logo.png}{Some longer text spanning over more than
+		%	only one line}
+	\end{memberships}
+}
+
+
+%-------------------------------------------------------------------------------
+%                         TABLE ENTRIES RIGHT COLUMN
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makefrontsidebar
+
+\cvsection{Working Experience}
+\begin{cvtable}[3]
+	\cvitem{currently}{CEO The Panda Way}{Start Up}{Chief executive officer, Head
+		developer and yoga ambassador of 'The Panda Way' - A company from pandas
+		for pandas.}
+	\cvitem{2018 -- 2019}{Data Scientist}{Amis University}{
+		Reasearching the impact of adequate AMIS nutrition compared to
+		conventional feeding methods.}
+	\cvitem{2017 -- 2018}{Asset Management Information Solution}{Decentralized Exchange}{Continuously improving
+		the workflow of crypto-asset distribution and exchange.}
+\end{cvtable}
+
+
+\cvsection{Education}
+\cvsubsection{Postgraduate Training}
+\begin{cvtable}[1.5]
+	\cvitem{2009 -- 2010}{Post-Doc Panda Studies}{Panda Academy}
+		{In-depth studies on the impact of bamboo nutrition for young pandas and
+		its relation to relaxing, sleeping and snoozing parts of the day.}
+	\cvitem{2008 -- 2009}{Research Stay Europe}{European Panda Labs}
+		{Spending one year abroad teaching about the
+		newest findings and research in the field of decentralized finance and
+		applications for BambooRelay as a trading platform.}
+\end{cvtable}
+
+
+\cvsubsection{Study}
+\begin{cvtable}[1.5]
+	\cvitem{2006 -- 2008}{Master Studies Panda Science}{Panda Academy}
+		{Focus: Advanced rice hat studies and nouveau rain-reflecting cover
+		materials.}
+	\cvitem{}{Master Theses ($\varnothing\, 1,0$)}{CRSW Institute}
+		{Impact of solar radiation onto rice hat cover materials with special
+		attention to water resistance.}
+	\cvitem{2003 -- 2006}{Bachelor Studies PandaScience}{Panda Academy}
+		{Focus: Bamboo stick morphology and its usage in different instruments.}
+	\cvitem{}{Bachelor Theses ($\varnothing\, 1,0$)}{BambooStick  Institute}
+		{The bamboo stick: An underestimated instrument in orchestras?}
+\end{cvtable}
+
+\cvsection{Publications}
+\begin{cvtable}
+	\cvpubitem{Back to Cosmos}{Sanchez et Al.}
+		{Progress in Physics}{2019}
+    \cvpubitem{Science unification and Permanent Cosmology}{Sanchez et Al.}
+        {Journal de Mathematiques pures et appliquees}{2020}
+\end{cvtable}
+
+\cvsection{Awards}
+\begin{cvtable}
+	\cvitem{2010 -- now}{Tiger of the Year}{OBS}{}
+	\cvitem{2001 -- now}{Voila Engine Search}{H3D}{}
+\end{cvtable}
+
+
+\cvsection{Extra-Curricular Activities}
+\begin{cvtable}
+	\cvitemshort{Sports}{Sailing, Golf}
+	\cvitemshort{Music}{Drums}
+	\cvitemshort{Education}{Machine Learning, CNN, AI}
+\end{cvtable}
+
+
+\newpage
+\makebacksidebar
+% \newgeometry{
+% 	top=\topbottommargin,
+% 	bottom=\topbottommargin,
+% 	right=\leftrightmargin,
+% 	left=\leftrightmargin
+% }
+
+\cvsection{section}
+\cvsubsection{Subsection}
+\begin{cvtable}
+	\cvitem{<dates>}{<cv-item title>}{<location>}{<optional: description>}
+\end{cvtable}
+
+\cvsection{cvitem}
+\cvsubsection{Multi-line with longer description}
+\begin{cvtable}
+	\cvitem{date}{Description}{location}{Some longer and more detailed
+		description, that takes two lines of space instead of only one.}
+	\cvitem{date}{Description}{location}{Some longer and more detailed
+		description, that takes two lines of space instead of only one.}
+	\cvitem{date}{Description}{location}{Some longer and more detailed
+		description, that takes two lines of space instead of only one.}
+\end{cvtable}
+
+\cvsubsection{One-line without description}
+\begin{cvtable}
+	\cvitem{Award}{One-line description}{Sponsor}{}
+	\cvitem{Award}{One-line description}{Sponsor}{}
+	\cvitem{Award}{One-line description}{Sponsor}{}
+\end{cvtable}
+
+\cvsection{cvitemshort}
+\cvsubsection{One-line}
+\begin{cvtable}
+	\cvitemshort{Key}{Some further description}
+	\cvitemshort{Key}{Some further description}
+	\cvitemshort{Key}{Some further description}
+\end{cvtable}
+
+\cvsubsection{Multi-line with longer description}
+\begin{cvtable}
+	\cvitemshort{Key}{Some further description. Can fill even more than
+		only one single line while still keeping the correct indendation level.}
+	\cvitemshort{Key}{Some further description. Can fill even more than
+		only one single line while still keeping the correct indendation level.}
+	\cvitemshort{Key}{Some further description. Can fill even more than
+		only one single line while still keeping the correct indendation level.}
+\end{cvtable}
+
+\cvsignature  \watermark.
+%\begin{Form}
+%  \digsigfield{5cm}{3cm}{\cvsignature}
+%\end{Form}
+\end{document}
