@@ -632,7 +632,7 @@
 
 \newcommand{\cvsignature}{
 	\vfill
-	{\large\bfseries\color{maincolor!70}\today \hfill \cvname}
+	{\large\bfseries\color{maincolor!70}- \hfill \today}
 }
 
 
